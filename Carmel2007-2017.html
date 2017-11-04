@@ -1,0 +1,33 @@
+<html>
+  <head>
+    ...
+    <link href="css/bgCompare.min.css" rel="stylesheet" type="text/css" />
+    ...
+  </head>
+  <body>
+      ...
+        <div id="bgCompare"></div>
+      ...
+     <script src="js/bgCompare.min.js"></script>
+     <script>
+       bgCompare({
+          targetId:     "bgCompare",                                  // Your element id
+          beforeImage:  "img/Carmel_2007_image.jpg", // Your before image
+          afterImage:   "img/Carmel_2017_UASimage.jpg",  // Your after image
+        });
+      </script>
+   </body>
+ </html>
+##Options
+
+ bgCompare({
+          beforeImage: "img/Carmel_2007_image.jpg", // Your before image
+          afterImage: "img/Carmel_2017_UASimage.jpg", // Your after image
+          bgSize: "contain", // the background-size ("cover", "contain" for responsive awesomeness) (default "contain")
+          targetId: "bgCompare", // the id of the element you want the script to load into
+          showTooltips: "no", // show or hide the tooltips next to the handle (default "yes")
+          txtBefore: "2007(Approx. position 2016)", // the text of the before tooltip (default "Before")
+          txtAfter: "2017", // the text of the after tooltip (default "After")
+          handleTheme: "dark-theme", // the theme of the handle (default "dark-theme")
+          sliderPos: "20%" // the position of the slider on load (default: "50%")
+        });
